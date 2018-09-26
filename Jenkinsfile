@@ -1,7 +1,5 @@
 pipeline {
-    agent {
-            docker { image 'docker_php-fpm72' }
-    }
+    agent any
     stages {
         stage('Build') {
             steps {
@@ -10,7 +8,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                bat 'echo "Fail!"; exit 1'
+                bat 'php --version'
             }
         }
     }
