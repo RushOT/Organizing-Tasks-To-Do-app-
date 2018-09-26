@@ -1,6 +1,11 @@
 pipeline {
     agent any
     stages {
+        stage('Build') {
+            steps {
+                bat 'echo "Hello World"'
+            }
+        }
         stage('Test') {
             steps {
                 bat 'echo "Fail!"; exit 1'
