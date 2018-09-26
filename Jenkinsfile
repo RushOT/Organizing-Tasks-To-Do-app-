@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        docker { image 'php:7.2-fpm'}
+    }
     stages {
         stage('Build') {
             steps {
