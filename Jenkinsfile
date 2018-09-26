@@ -1,6 +1,6 @@
 pipeline {
     agent {
-            docker { image 'php-fpm' }
+            docker { image 'docker_php-fpm72' }
     }
     stages {
         stage('Build') {
