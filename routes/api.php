@@ -24,4 +24,3 @@ Route::get('/tasks/done','TaskController@getTasksDone');
 Route::post('/tasks/{id}','TaskController@getTask');
 
 Route::post('/tasks','TaskController@store');
-
